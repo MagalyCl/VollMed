@@ -63,6 +63,14 @@ import med.voll.api.endereco.Endereco;
             return id;
         }
 
+        public String getTelefone() {
+            return telefone;
+        }
+
+        public Endereco getEndereco() {
+            return endereco;
+        }
+
         public void atualizarInformacoes(@Valid DadosAtualizacaoMedico dados) {
             if (dados.nome() != null) {
                 this.nome = dados.nome();
@@ -79,4 +87,5 @@ import med.voll.api.endereco.Endereco;
         public void excluir() {
             this.ativo = false;
         }
+
     }

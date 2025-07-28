@@ -68,4 +68,12 @@ public class Paciente {
     public Long getId() {
         return id;
     }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public Endereco getEndereco() {
+        return endereco;
+    }
 }
